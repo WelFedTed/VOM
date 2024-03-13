@@ -8,7 +8,7 @@ if "%~2"=="" (
     echo No argument provided. Please specify a file.
     exit /b
 )
-rem if "%~2"=="test.txt" copy test.txt.bak test.txt
+@REM if "%~2"=="test.txt" copy test.txt.bak test.txt
 if not exist "%~2" (
     echo File does not exist.
     exit /b
@@ -38,7 +38,7 @@ if "%~1"=="d" (
 	echo Pass %pass_counter%...
 	barf.exe c %input% > temp.txt
 	set /p output=<temp.txt
-	rem read new filename from temp.txt
+	@REM read new filename from temp.txt
 	for /f "tokens=5" %%a in (temp.txt) do (
 	    set "output=%%a"
 	)
@@ -62,7 +62,7 @@ if "%~1"=="d" (
 	echo Pass %current_pass%...
 	barf.exe d %input% > temp.txt
 	set /p output=<temp.txt
-	rem read new filename from temp.txt
+	@REM read new filename from temp.txt
 	for /f "tokens=5" %%a in (temp.txt) do (
 	    set "output=%%a"
 	)
@@ -86,10 +86,10 @@ if "%~1"=="d" (
 		        )
 		    )
 		)
-		rem echo Number of extensions: %pass_counter%
+		@REM echo Number of extensions: %pass_counter%
 	goto DECOMPRESS
 
 
 :END
 	endlocal
-	echo End of script
+	@REM echo End of script
