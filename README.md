@@ -1,4 +1,4 @@
-# VOM-BARF (Vigilant Output Minimizer)
+# VOM (Vigilant Output Minimizer)
 
 Batch wrapper for [BARF](https://www.mattmahoney.net/dc/barf.html) compressor
 
