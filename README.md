@@ -1,4 +1,4 @@
-bb# VOM-BARF
+# VOM-BARF
 
 Batch wrapper for BARF compressor
 
