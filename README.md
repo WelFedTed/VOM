@@ -1,4 +1,4 @@
-# VOM-BARF
+# VOM-BARF (Vigilant Output Minimizer)
 
 Batch wrapper for BARF compressor
 

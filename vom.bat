@@ -2,7 +2,7 @@
 
 setlocal enabledelayedexpansion
 
-rem title VOM - Vigilant Output Minimizer
+title VOM - Vigilant Output Minimizer
 
 if "%~2"=="" (
     echo No argument provided. Please specify a file.
